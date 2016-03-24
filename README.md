@@ -2,7 +2,7 @@
 
 ## Installation
 
-```javascript
+```
 npm install --save parse-value
 ```
 
@@ -36,9 +36,9 @@ var number = parseValue(type, value);
 
 ```javascript
 parseValue('string','test')
-// => 'test'
+// 'test'
 parseValue('string', 3)
-// => '3'
+// '3'
 ```
 
 
@@ -46,20 +46,20 @@ parseValue('string', 3)
 
 ```javascript
 parseValue('number','3')
-// => 3
+// 3
 parseValue('number','3.2')
-// => 3.2
+// 3.2
 
 parseValue('number', 'abc')
-// => NaN
+// NaN
 
 parseValue('int','3')
-// => 3
+// 3
 parseValue('int','3.2')
-// => 3
+// 3
 
 parseValue('float','3.2')
-// => 3.2
+// 3.2
 ```
 
 
@@ -67,12 +67,12 @@ parseValue('float','3.2')
 
 ```javascript
 parseValue('date', '2000-01-01')
-// => Sat Jan 01 2000 01:00:00 GMT+0100 (CET)
+// Sat Jan 01 2000 01:00:00 GMT+0100 (CET)
 parseValue('date', 946684800000)
-// => Sat Jan 01 2000 01:00:00 GMT+0100 (CET)
+// Sat Jan 01 2000 01:00:00 GMT+0100 (CET)
 
 parseValue('date', 'abc')
-// => Invalid Date
+// Invalid Date
 ```
 
 
@@ -80,32 +80,32 @@ parseValue('date', 'abc')
 
 ```javascript
 parseValue('bool', true)
-// => true
+// true
 parseValue('bool', 1)
-// => true
+// true
 parseValue('bool', 'true')
-// => true
+// true
 parseValue('bool', 't')
-// => true
+// true
 parseValue('bool', 'yes')
-// => true
+// true
 parseValue('bool', 'y')
-// => true
+// true
 
 parseValue('bool', false)
-// => false
+// false
 parseValue('bool', 0)
-// => false
+// false
 parseValue('bool', 'false')
-// => false
+// false
 parseValue('bool', 'f')
-// => false
+// false
 parseValue('bool', 'no')
-// => false
+// false
 parseValue('bool', 'n')
-// => false
+// false
 parseValue('bool', null)
-// => false
+// false
 ```
 
 
@@ -113,9 +113,9 @@ parseValue('bool', null)
 
 ```javascript
 parseValue('regex', 'a+b')
-// => /a+b/gm
+// /a+b/gm
 parseValue('regex', '.*\\.js')
-// => /.*\.js/gm
+// /.*\.js/gm
 ```
 
 
@@ -123,7 +123,7 @@ parseValue('regex', '.*\\.js')
 
 ```javascript
 parseValue('null', 'anyValue')
-// => null
+// null
 parseValue('null', 3)
-// => null
+// null
 ```
