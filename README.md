@@ -23,12 +23,19 @@ var number = parseValue(type, value);
 
 ## Documentation
 
-**parseValue(type, value)**
+**parseValue(type, value)**:
 
-- String `type`: type to use
+*Parse value to given type*
+
+params
+
+- String `type`: *type to use*
     - 'string' (default), 'number', 'int', 'integer', 'float', 'date', 'bool', 'boolean', 'regex', 'regexp', 'null'
-- Object `value`: value to parse
+- Object `value`: *value to parse*
 
+return
+
+- Object: *parsed value*
 
 ## Examples
 
@@ -127,3 +134,7 @@ parseValue('null', 'anyValue')
 parseValue('null', 3)
 // null
 ```
+
+
+
+*LICENSE: MIT*
