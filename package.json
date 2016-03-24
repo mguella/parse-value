@@ -1,11 +1,26 @@
 {
   "name": "parse-value",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Generic value parser for javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mattia",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mguella/parse-value.git"
+  },
+  "keywords": [
+    "parse-value",
+    "parse",
+    "value"
+    "parseInt",
+    "parseFloat",
+  ],
+  "bugs": {
+    "url": "https://github.com/mguella/parse-value/issues"
+  },
+  "homepage": "https://github.com/mguella/parse-value"
 }
