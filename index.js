@@ -5,6 +5,8 @@
  * @return {Object}                 parsed value
  */
 module.exports = function parseValue(type, value) {
+    var result = value;
+    
     switch (type && type.toLowerCase()){
         case 'int':
         case 'integer':
