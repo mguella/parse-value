@@ -2,13 +2,13 @@
 
 ## Installation
 
-```
+```javascript
 npm install --save parse-value
 ```
 
 ## Usage
 
-```
+```javascript
 // require parseValue
 var parseValue = require('parse-value');
 
@@ -33,15 +33,18 @@ var number = parseValue(type, value);
 ## Examples
 
 ### String
-```
+
+```javascript
 parseValue('string','test')
 // => 'test'
 parseValue('string', 3)
 // => '3'
 ```
 
+
 ### Number
-```
+
+```javascript
 parseValue('number','3')
 // => 3
 parseValue('number','3.2')
@@ -59,8 +62,10 @@ parseValue('float','3.2')
 // => 3.2
 ```
 
+
 ### Date
-```
+
+```javascript
 parseValue('date', '2000-01-01')
 // => Sat Jan 01 2000 01:00:00 GMT+0100 (CET)
 parseValue('date', 946684800000)
@@ -70,8 +75,10 @@ parseValue('date', 'abc')
 // => Invalid Date
 ```
 
+
 ### Bool
-```
+
+```javascript
 parseValue('bool', true)
 // => true
 parseValue('bool', 1)
@@ -101,16 +108,20 @@ parseValue('bool', null)
 // => false
 ```
 
+
 ### Regex
-```
+
+```javascript
 parseValue('regex', 'a+b')
 // => /a+b/gm
 parseValue('regex', '.*\\.js')
 // => /.*\.js/gm
 ```
 
+
 ### Null
-```
+
+```javascript
 parseValue('null', 'anyValue')
 // => null
 parseValue('null', 3)
