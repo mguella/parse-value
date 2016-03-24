@@ -15,9 +15,9 @@
   "keywords": [
     "parse-value",
     "parse",
-    "value"
+    "value",
     "parseInt",
-    "parseFloat",
+    "parseFloat"
   ],
   "bugs": {
     "url": "https://github.com/mguella/parse-value/issues"
