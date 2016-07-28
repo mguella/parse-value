@@ -35,6 +35,10 @@ module.exports = function parseValue(type, value) {
         case 'regexp':
             result = RegExp(value, 'gm').valueOf();
             break;
+        case 'regexi':
+        case 'regexpi':
+            result = RegExp(value, 'gmi').valueOf();
+            break;
         case 'null':
             result = null;
             break;
